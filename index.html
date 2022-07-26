@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1 style="text-align: center">Javascript</h1>
+    <ol>
+        <b><li>Introduction to Javascript</li></b><br>
+        <dd>Javascript is interpreted language(line by line execution).Transfer one langauge into another language.It is compiled language</dd><br>
+        <b><li>How Javascript works and Execution context</li></b><br>
+        <dd>Everything in Javascript happens inside execution context.For every line new execution context is created</dd>
+        <dd>It consisting memory and code block, together we called as container. Memory stores variable and code contains execution part.Memory called as variable environment and Code is called as thread of execution Before execution memory stores the variable as undefined and once it get executed it shows variable values.In code before execution it is empty once code gets executed code store the each executing lines.</dd>
+        <dd>Topics on single threaded and multi threaded,Synchronous and Asynchronous</dd>
+        <dd>Javascript is known as front-end execution context : Variable and Fnction</dd>
+        <dd>DRY -Don't repeat yourself</dd>
+        <dd>Function is piece of code and used to perform the task.</dd><br>
+        <b><li>How Javascript code is executed and call stack</li></b><br>
+        <dd>FIFO-First In First Out.It has Global Execution Context(GEC)</dd>
+        <dd>Call stack arranges things properly</dd><br>        
+        <b><li>JavaScript Engine</li></b><br>
+        <dd>Javascript Engine:Chrome-V8 Engine, free and open source engine</dd>
+        <dd>Event loop,set time out, set interval</dd>
+        <dd>Javascript executed using V8 engine </dd>
+        <pre> var a ="Awesome Javascript"</pre>
+        <dd>var-token</dd>
+        <dd>a-token</dd>
+        <dd>"Awesome Javascript"-token</dd>
+        <dd>script-tag :is tag name in  Javascript added just before end of the body tag</dd>
+        <pre>
+            < body>
+            < p> xyz< /p>
+            < b>abc< /b>
+            < script>
+                console.log("hello world");
+            < /script>
+            < /body>
+        </pre>
+    </ol>
+    <ol>
+        <b><li>Declaration</li></b>
+        <dd>var-variable:cause lot of problem</dd>
+        <dd>const-constant:For example a has constant if we change the value of a in next line it will show error because we have mentioned const.</dd>
+        <dd>let-block defined: let defined in global scope</dd>
+        <dd>Declaration part has 3 error : Sntax error, Reference error, Type error</dd><br>
+        <b><li>Hoisting in Javascript</li></b><br>
+        <dd>Hoisting is JavaScript's default behavior of moving declarations to the top.Hoisting is not possible in let and const</dd>
+        <dd>a variable can be declared after it has been used and variable can be used before it has been declared.</dd>
+        example 1
+        <pre>
+             var a=12;
+             Function No.1(){
+                console.log("hi");
+             }
+             console.log(a);
+             No.1()
+        </pre>
+        example 2
+        <pre>
+             console.log(a);
+             No.1()
+             var a=12;
+             Function No.1(){
+                console.log("hi");
+             }
+             
+        </pre>
+        <b><li>Undefined vs notdefined</li></b>
+        <dd>undefined:It works like when we declared a variable in the code but did not assign the value before printing the variable value</dd>
+        <pre>
+            < script>
+                console.log(a);
+                var a = 5;
+                console.log(a);
+            < /script>
+                
+        </pre>
+        <dd>notdefined:It works like when we did not declare the variable and try to call that variable.</dd>
+        <pre>
+            < script>
+                console.log(a);
+                var a = 5;
+                console.log(a);
+                console.log(b);
+            < /script>
+           
+            here b is not defined
+                
+        </pre>
+    </ol>
+
+</body>
+</html>
